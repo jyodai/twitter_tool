@@ -8,13 +8,13 @@
  * 3. Twitterをのいいねのページで開発者ツールに貼り付ける
  * 
  * [オプション]
- * debugFlag : 実際にいいねの取り消しは行わず、多少となったツイートをログに出力
+ * debugFlag : 実際にいいねの取り消しは行わず、対象となったツイートをログに出力
  *             取り消し対象の確認に使用する
  */
 
 const startDate   = new Date('2010-01-01');
 const endDate     = new Date('2020-01-25');
-const debugFlag = true
+const debugFlag   = true
 
 async function unlinkLike() {
   const articleCollection = document.getElementsByTagName('article');
